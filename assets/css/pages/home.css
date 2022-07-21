@@ -544,7 +544,7 @@
 .contact{
     margin-top: 5rem;
     background-color: var(--dark);
-    height: 36rem;
+    height: 38rem;
 }
 .contact__content {
     color: var(--white);
@@ -602,6 +602,10 @@
 }
 .contact__terms{
     padding-top: 1.8rem;
+}
+.contact__terms span{
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 .contact__terms > label:hover{
     cursor: pointer;
