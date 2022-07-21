@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@300;700;900&display=swap');
+
+:root{
+    --white: #fff;
+    --primary: #AF9C66;
+    --fontSecondary: 'Montserrat', sans-serif;
+}
+
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: auto;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     font-size: 2.1rem;
     line-height: 1.4;
     overflow: hidden;
@@ -44,4 +53,100 @@ h3 {
 
 h4 {
     font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero */
+.hero{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 70rem;
+}
+
+/* NavBar */
+.nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 1.5rem;
+    width: min(100%, 140rem);
+    margin: 0 auto;
+}
+.nav-left,
+.nav-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.nav-right > li:nth-child(2){
+    margin-left: 5rem;
+}
+.nav a{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.logo{
+    margin: 1rem auto 0 auto;
+    width: 8rem;
+}
+.nav__btn{
+    margin-top: .5rem;
+    margin-left: 10rem;
+    background-color: var(--primary);
+    padding: .8rem 4rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav__btn > span{
+    padding-left: 1rem;
+}
+.nav__btn_icon{
+    background-image: url(../images/icons/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: .5rem;
+    top: 50.4%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.hero__text{
+    position: relative;
+    width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero__text_content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.hero__text_content > h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 4.7rem;
+    padding-bottom: 5rem;
+}
+.hero__text_content > p{
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    color: var(--white);
+    font-size: 2.2rem;
 }
