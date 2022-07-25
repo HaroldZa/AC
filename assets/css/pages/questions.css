@@ -1,0 +1,108 @@
+/* Main */
+.main{
+    position: relative;
+    z-index: 1;
+    margin-top: 7rem;
+}
+.main__multi_single {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.main-list>div:last-child {
+    border: unset;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: -2rem;
+    padding-right: 4rem;
+    transition: all 0.3s ease;
+}
+
+.main_right {
+    padding-bottom: 1rem !important;
+}
+
+.main__multi_title {
+    padding-top: .4rem;
+    padding-left: 5rem;
+    font-size: 2.8rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+.main-content{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+details{
+  padding-top: 1rem;
+  overflow: hidden;
+  max-height: 6rem;
+  min-height: 6rem;
+  -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s;
+    
+}
+
+details[open] {
+  max-height: 100rem;
+  min-height: 20rem;
+  transition: 4s;
+}
+
+details p{
+    color: var(--dark);
+  animation: fadeInRight;
+  animation-duration: 2s; 
+}
+
+details[open] p {
+    color: var(--dark);
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+summary:before {
+    content: url('../../images/icons/arrow_q.png');
+    transform: rotate(-90deg) scale(.8);
+    position: absolute;
+    top: .2rem;
+    left: 1.5%;
+    transition: transform .4s ease-in-out;
+    margin-top: .3rem;
+}
+
+details[open] summary:before {
+    background: transparent;
+    content: url('../../images/icons/arrow_q.png');
+    position: absolute;
+    top: .2rem;
+    left: 1.5%;
+    transform: scale(.8);
+    
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}

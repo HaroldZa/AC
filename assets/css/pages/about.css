@@ -1,0 +1,229 @@
+/* Main */
+.main{
+    margin: 7rem auto 0 auto;
+    width: min(90%, 140rem);
+}
+.main__block{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4rem;
+}
+.main__block .main__block_img > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.main__block:nth-child(1) .main__block_img > img{
+    top: -2rem;
+    left: -3rem;
+}
+.main__block:nth-child(2) .main__block_img > img{
+    top: -2rem;
+    right: -3rem;
+}
+.main__block .main__block_img{
+    position: relative;
+    border: .3rem solid var(--primary);
+    grid-column: 1/6;
+}
+.main__block .main__block_text{
+    grid-column: 6/13;
+}
+.main__block:nth-child(2) .main__block_img{
+    grid-column: 8/13;
+}
+.main__block:nth-child(2) .main__block_text{
+    text-align: right;
+    grid-column: 1/8;
+}
+.main__block:last-child{
+    margin-top: 5rem;
+}
+.main__block_text > p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #606060;
+}
+
+/* Team */
+.team{
+    margin-top: 7rem;
+    background-image: url(../../images/f_5.png);
+    background-repeat: no-repeat;
+}
+.team__content{
+    margin: 0 auto;
+    width: min(90%, 145rem);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 10rem 0 3rem 0;
+}
+.team__text_title{
+    width: 80%;
+    border: .5rem solid #4f5559;
+    padding: 2.5rem 0;
+}
+.team__text_title > span{
+    position: relative;
+    left: -4rem;
+    font-size: 7.7rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    text-transform: uppercase;
+}
+.team__text_title > span > span{
+    color: var(--primary);
+}
+.team__text > p{
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #606060;
+}
+.team__text_border{
+    background-color: var(--primary);
+    width: 30%;
+    height: .2rem;
+    margin-top: 2.5rem;
+}
+
+
+.team__slider{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.team__img{
+    background-color: var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 85%;
+}
+.team__img > img{
+    position: relative;
+    top: 1.3rem;
+    transform: scale(1.1);
+}
+.team__info{
+    display: flex;
+    gap: 1rem;
+    width: 95%;
+    padding-top: 2rem;
+}
+.team__member{
+    border: .2rem solid #4f5559;
+    text-align: right;
+}
+.team__member > p{
+    position: relative;
+    right: 2rem;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 0;
+}
+.team__member span{
+    display: block;
+    color: #606060;
+    font-weight: 300;
+}
+.team__info > p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #606060;
+    padding: 0;
+    margin: 0;
+}
+.swiper{
+    padding-bottom: 10rem !important;
+    padding-left: 2rem !important;
+}
+.swiper-pagination{
+    bottom: 3rem !important;
+}
+.swiper-pagination-text{
+    position: absolute;
+    left:0;
+    right:0;
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #606060;
+}
+.swiper-pagination-bullet{
+    padding: .3rem !important;
+}
+.swiper-pagination-bullet-active{
+    background: var(--primary) !important;
+}
+
+/* Advice */
+.advice{
+    background-color: #F5F5F5;
+}
+.advice__content{
+    padding: 7rem 0;
+}
+.advice__content > h2{
+    text-align: center;
+    color: #212129;
+    font-size: 5.5rem;
+    font-weight: 300;
+}
+.advice__content > h2 > span{
+    font-weight: 600;
+    color: #763476;
+}
+.advice__form {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    justify-items: auto;
+    column-gap: 4rem;
+}
+.advice__form input {
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #606060;
+    font-weight: 300;
+  }
+.advice__form input:nth-child(1) {
+    grid-column: 1/5;
+}
+  
+.advice__form input:nth-child(2) {
+    grid-column: 5/8;
+}
+  
+.advice__form>a {
+    grid-column: 8/10;
+    width: 100%;
+    height: 100%;
+    background-color: #763476;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 5rem;
+    padding: .2rem 0;
+}
+.advice__terms{
+    padding-top: 1.8rem;
+}
+.advice__terms span{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.advice__terms > label:hover{
+    cursor: pointer;
+}

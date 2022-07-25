@@ -1,0 +1,112 @@
+/* Hero */
+.hero__content > h1{
+    text-transform: uppercase;
+}
+
+/* Border Contact */
+#contact_border{
+    position: relative;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+#contact_border > img{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#contact_border > img:hover{
+    cursor: pointer;
+}
+#contact_border > p{
+    line-height: 1.2;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 1.7rem;
+}
+#contact_border > p > span{
+    display: block;
+    font-weight: 300;
+}
+#contact_border > p > span > a{
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* Main */
+.main{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background-color: #F5F5F5;
+}
+.main__content{
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.main__content > h3{
+    text-align: center;
+    color: var(--primary);
+    padding-bottom: 5rem;
+}
+.main__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.main__form > input,
+.main__form > textarea{
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #606060;
+}
+.main__form > label{
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.btn{
+    background-color: #763476;
+    width: 26rem;
+    margin: 0 auto;
+    border-radius: 5rem !important;
+    padding: 3rem 0;
+    color: var(--white) !important;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+/* Locate */
+.locate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.locate__map > img{
+    height: 100%;
+}
+.locate__address{
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locate__address > p{
+    color: var(--white);
+    font-size: 2.2rem;
+    font-weight: 500;
+}

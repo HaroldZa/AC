@@ -1,0 +1,108 @@
+/* Main */
+.main{
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    align-items: center;
+}
+.main > img{
+    height: 100%;
+}
+.main__contact{
+    padding: 4rem 0 !important;
+    font-family: var(--fontSecondary);
+    padding: 0 5rem;
+    text-align: center;
+}
+.main__contact_text > h3{
+    color: var(--primary);
+    font-size: 2.8rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+.main__contact_text > p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+.main__contact_text > p > span{
+    font-weight: 600;
+}
+.main__form{
+    margin-top: 2rem;
+}
+.main__form > input{
+    border: 1px solid #e3e2e2;
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: var(--dark);
+    border-radius: .5rem;
+}
+.form__checkbox{
+    margin: 1rem 0 2rem 0;
+}
+.form__checkbox > label > input[type="checkbox"]{
+    width: .8em;
+    height: .8em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--dark);
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.form__checkbox > label > input[type="checkbox"]:checked{
+    background-color: var(--primary);
+}
+.form__checkbox > label > span{
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: var(--dark);
+}
+.form__checkbox > label:hover{
+    cursor: pointer;
+}
+.btn{
+    background-color: rgb(254,101,85);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5rem !important;
+    padding: 1rem 0;
+    color: var(--white) !important;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.main__form > p{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark);
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

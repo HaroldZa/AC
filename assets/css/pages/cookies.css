@@ -1,0 +1,15 @@
+/* Main */
+.main{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: #606060;
+}
+.main p {
+    font-weight: 300;
+}
+.main h4{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
