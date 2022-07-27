@@ -86,3 +86,12 @@
 .swiper-pagination-bullet-active{
     background: var(--primary) !important;
 }
+
+.main__card{
+    transition: .7s;
+}
+
+.main__card:hover{
+    transform: scale(1.01);
+    transition: .7s;
+}

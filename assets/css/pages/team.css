@@ -67,6 +67,20 @@
     color: #763476;
 }
 
+/* Hover */
+.main__card_img,
+.main__card_cv_text p span{
+    transition: .7s;
+}
+.main__card_img:hover{
+    transform: scale(1.02);
+    transition: .7s;
+}
+.main__card_cv_text p:hover span{
+    letter-spacing: 1px;
+    transition: .7s;
+}
+
 @media (max-width: 940px) {
     .main__card{
         grid-template-columns: 100%;

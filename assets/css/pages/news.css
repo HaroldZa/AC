@@ -107,6 +107,43 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* Btn */
+.btn {
+    background-color: transparent;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    outline: 0;
+    color: #fff;
+    transform: scale(1.01) translateZ(0);
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.btn-cont {
+    padding: 0.7em 1.5em;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to left, rgb(254,101,85) 50%, rgb(251, 91, 73) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.btn-cont:hover {
+    background-position: left bottom;
+}
+
+/* Hover */
+.main > img{
+    transition: .7s;
+}
+.main > img:hover{
+    transform: scale(.99);
+    transition: .7s;
+}
+
 @media (max-width: 1150px) {
     /* Main */
     .container{

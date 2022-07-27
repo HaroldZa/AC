@@ -16,7 +16,7 @@
     <header class="hero">
         <nav class="nav desktop">
             <ul class="nav-left">
-                <li><a class="active_nav" href="/">Inicio</a></li>
+                <li><a href="/">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
@@ -24,7 +24,7 @@
                 <img src="assets/images/logo_1.png" alt="">
             </div>
             <ul class="nav-right">
-                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active_nav" href="blog.html">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a class="nav__btn" href="#">
                         <div class="nav__btn_icon"></div>
@@ -330,7 +330,7 @@
                 <h3>¿Tienes dudas?
                     <span>Respondo de forma rápida y personalizada.</span>
                 </h3>
-                <a href="#">¡Contáctame!</a>
+                <a class="btn btn-cont" href="#">¡Contáctame!</a>
             </div>
         </div>
     </section>
@@ -550,6 +550,15 @@
         }
         document.querySelector('.total-slides').innerHTML = n + document.getElementsByClassName("swiper-pagination-bullet").length;
         document.querySelector('.current-slide').innerHTML = n1 + swiper.realIndex + 1;
+
+        $(".swiper-slide").on('click', function () {
+            let cat = document.getElementsByClassName('swiper-slide');
+            var indicedown = $(this).index(); indicedowngood = indicedown + 1;
+            $('.swiper-slide').removeClass('active_cat');
+
+            var elemento = $(".swiper-slide")[indicedown];
+            $(elemento).addClass("active_cat");            
+        });
     </script>
 
 </body>

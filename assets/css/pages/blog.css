@@ -298,6 +298,55 @@
     border-radius: 5rem;
 }
 
+/* Btn contact */
+.btn {
+    background-color: transparent;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    outline: 0;
+    color: #fff;
+    transform: scale(1.01) translateZ(0);
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.btn-cont {
+    padding: 0.7em 1.5em;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to left, var(--primary) 50%, #aa955a 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.btn-cont:hover {
+    background-position: left bottom;
+}
+
+/* Hover */
+.info__card_img,
+.info__card_text>a,
+.swiper-button-prev,
+.swiper-button-next{
+    transition: .7s;
+}
+
+.info__card_img:hover{
+    transform: scale(1.02);
+    transition: .7s;
+}
+.info__card_text > a:hover{
+    letter-spacing: 1.5px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    transform: scale(1.06);
+    transition: .7s;
+}
+
 @media (max-width: 1220px) {
     /* Info */
     .info__search{

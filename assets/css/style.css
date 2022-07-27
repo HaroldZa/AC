@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Poppins:wght@300;600&family=Roboto:wght@300;500;700;900&display=swap');
+@import url("../libs/animate/animate.min.css");
 
 :root{
     --white: #fff;
@@ -98,6 +99,14 @@ img{
     width: min(100%, 140rem);
     margin: 0 auto;
 }
+.nav-left{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+.nav-right{
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
 .nav-left,
 .nav-right{
     display: flex;
@@ -129,6 +138,8 @@ img{
     color: var(--primary);
 }
 .logo{
+    animation: fadeInDown;
+    animation-duration: 1s;
     margin: 1rem auto 0 auto;
     width: 8rem;
 }
@@ -141,6 +152,33 @@ img{
     display: flex;
     align-items: center;
     position: relative;
+    transition: .5s;
+    zoom: 100%;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to left, var(--primary) 50%, #aa955a 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+/* Nav__btn hover */
+.nav__btn:hover{
+    zoom: 103%;
+    transition: .5s;
+    padding: .8rem 6rem .8rem 2rem;
+    outline: 0;
+    color: #fff;
+    background-position: left bottom;
+}
+.nav__btn:hover .nav__btn_icon{
+    left: 75%;
+    transition: .7s;
+}
+.nav__btn:hover span{
+    font-weight: 400;
 }
 .nav__btn > span{
     padding-left: 1rem;
@@ -149,6 +187,7 @@ img{
     color: var(--white);
 }
 .nav__btn_icon{
+    transition: .7s;
     background-image: url(../images/icons/circle.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,6 +219,8 @@ img{
     color: var(--primary);
     font-size: 4.7rem;
     padding-bottom: 5rem;
+    animation: fadeInLeft;
+    animation-duration: 1s;
 }
 .hero__text_content > p{
     width: 80%;
@@ -187,6 +228,8 @@ img{
     font-weight: 300;
     color: var(--white);
     font-size: 2.2rem;
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 
 /* Gallery */
@@ -321,7 +364,7 @@ img{
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 0 0 0 -1rem;
+    margin: 2rem 0 0 -1rem;
 }
 
 .icons li {
@@ -333,9 +376,12 @@ img{
     width: 100%;
     height: 100%;
     background-color: transparent;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     position: relative;
+    top: 50%;
     overflow: hidden;
     border: 3px solid transparent;
     z-index: 0;
@@ -391,6 +437,28 @@ img{
 }
 .mobile{
     display: none;
+}
+
+/* Hover global */
+.card,.logo{
+    transition: .5s;
+}
+
+.card:hover,.logo:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+input{
+    transition: .5s;
+}
+input:hover{
+    transform: scale(1.01);
+    transition: .5s;
 }
 
 @media (max-width: 1300px) {
