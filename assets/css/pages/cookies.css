@@ -1,5 +1,7 @@
 /* Main */
 .main{
+    animation: fadeInUp;
+    animation-duration: 1s;
     margin-top: 7rem;
     margin-bottom: 7rem;
     font-size: 2rem;

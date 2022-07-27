@@ -11,6 +11,8 @@
     padding: 1rem 0;
 }
 #contact_border > img{
+    animation: fadeInRight;
+    animation-duration: 1s;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -19,6 +21,8 @@
     cursor: pointer;
 }
 #contact_border > p{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     line-height: 1.2;
     width: 70%;
     margin: 0 auto;
@@ -49,11 +53,15 @@
     margin: 0 auto;
 }
 .main__content > h3{
+    animation: fadeInRight;
+    animation-duration: 1s;
     text-align: center;
     color: var(--primary);
     padding-bottom: 5rem;
 }
 .main__form{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -127,6 +135,8 @@ label:hover{
     grid-template-columns: repeat(2, 1fr);
 }
 .locate__map{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     width: 100%;
     height: 100%;
 }
@@ -135,6 +145,8 @@ label:hover{
     height: 100%;
 }
 .locate__address{
+    animation: fadeInRight;
+    animation-duration: 1s;
     background-color: var(--dark);
     display: flex;
     align-items: center;

@@ -9,6 +9,8 @@
     justify-content: end;
     position: relative;
     margin-bottom: 2rem;
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 
 .info__search>input {
@@ -38,11 +40,17 @@
     border: .3rem solid var(--primary);
     height: fit-content;
     padding-bottom: 2rem;
+    animation: fadeInLeft;
+    animation-duration: 1s;
 }
 
 .info__card_img>img {
     margin-left: -2rem;
     margin-top: -2rem;
+}
+.info__card_text{
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 
 .info__card_text>h3 {
@@ -89,6 +97,8 @@
     margin: 0 auto;
 }
 .main__categories{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     padding-top: 5rem;
 }
 .slider_cards {
@@ -182,6 +192,8 @@
 .cards__content{height: 100rem;}
 .swiper-slide{
     margin: 1rem;
+    animation: pulse;
+    animation-duration: 1s;
 }
 .card {
     width: 34rem;
@@ -275,6 +287,8 @@
     background-color: var(--dark);
 }
 .contact__text{
+    animation: fadeInRight;
+    animation-duration: 1s;
     padding: 8rem 0 9rem 0;
 }
 .contact__text > h3{

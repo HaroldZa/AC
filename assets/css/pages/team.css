@@ -12,6 +12,8 @@
 }
 
 .main__card_img {
+    animation: fadeInLeft;
+    animation-duration: 1s;
     position: relative;
     border: .3rem solid var(--primary);
     height: fit-content;
@@ -29,6 +31,10 @@
 }
 #pause:hover{
     cursor: pointer;
+}
+.main__card_text{
+    animation: fadeInRight;
+    animation-duration: 1s;
 }
 .main__card_text > h3{
     font-family: var(--fontSecondary);

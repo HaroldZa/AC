@@ -88,6 +88,8 @@
 }
 
 .main__card{
+    animation: pulse;
+    animation-duration: 1s;
     transition: .7s;
 }
 

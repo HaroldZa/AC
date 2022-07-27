@@ -60,6 +60,10 @@
     align-items: center;
     padding: 10rem 0 3rem 0;
 }
+.team__text{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
 .team__text_title{
     width: 80%;
     border: .5rem solid #4f5559;
@@ -98,6 +102,8 @@
 }
 
 .team__slider{
+    animation: fadeInRight;
+    animation-duration: 1s;
     display: flex;
     align-items: center;
     gap: 2rem;

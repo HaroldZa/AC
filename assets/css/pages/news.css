@@ -8,9 +8,13 @@
     align-items: center;
 }
 .main > img{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     height: 100%;
 }
 .main__contact{
+    animation: fadeInRight;
+    animation-duration: 1s;
     padding: 4rem 0 !important;
     font-family: var(--fontSecondary);
     padding: 0 5rem;

@@ -78,6 +78,8 @@ img{
     margin: 0 auto;
 }
 .hero__content > h1{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     font-family: var(--fontSecondary);
     font-size: 4.7rem;
     font-weight: 800;
@@ -85,6 +87,8 @@ img{
     padding-bottom: 1rem;
 }
 .hero__content > p{
+    animation: fadeInRight;
+    animation-duration: 1s;
     font-weight: 300;
     font-size: 2.2rem;
     color: var(--white);
@@ -313,6 +317,8 @@ img{
     padding-bottom: 2rem;
 }
 .footer__content{
+    animation: fadeInLeft;
+    animation-duration: 1s;
     display: flex;
     justify-content: space-around;
     align-items: start;
@@ -660,9 +666,7 @@ input:hover{
         margin-right: 0;
         width: 100%;
     }
-    .text > span{
-        font-size: 1.4rem;
-    }
+    
 
     .gallery__card:nth-child(1) {
         grid-column: 1/5;
@@ -792,5 +796,8 @@ input:hover{
     .hero__content > p{
         padding-top: 1rem;
         font-size: 1.7rem;
+    }
+    .text > span{
+        font-size: 1.4rem;
     }
 }
