@@ -106,3 +106,29 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+@media (max-width: 1150px) {
+    /* Main */
+    .container{
+        width: 100%;
+    }
+    .main{
+        margin-top: 0;
+        background-color: var(--white);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main > img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .main__contact{
+        background-color: #F5F5F5;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .main > img{
+        width: 100%;
+    }
+}

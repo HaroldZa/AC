@@ -405,6 +405,15 @@ img{
     .mobile{
         display: block;
     }
+    /* Hero */
+    .hero{
+        background-image: url(../images/c_2.jpg);
+        height: 46rem;
+    }
+    .hero__content{
+        padding-top: 7rem;
+    }
+
     /* Nav Mobile */
     .nav__mobil{
         display: flex;
@@ -701,5 +710,19 @@ img{
     }
     .footer__copyright{
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 940px) {
+    /* Hero */
+    .hero__content{
+        width: 95%;
+    }
+    .hero__content > h1{
+        font-size: 4rem;
+    }
+    .hero__content > p{
+        padding-top: 1rem;
+        font-size: 1.7rem;
     }
 }

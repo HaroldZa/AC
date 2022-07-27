@@ -13,3 +13,9 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media (max-width: 1220px) {
+    .hero__content{
+        padding-top: 13rem;
+    }
+}

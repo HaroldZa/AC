@@ -21,7 +21,7 @@
     margin-left: -2rem;
     margin-top: -2rem;
 }
-#pause{
+#pause{ 
     position: absolute;
     right: 2rem;
     bottom: 4rem;
@@ -65,4 +65,30 @@
 .main__card_cv_text > p > span{
     display: block;
     color: #763476;
+}
+
+@media (max-width: 940px) {
+    .main__card{
+        grid-template-columns: 100%;
+    }
+    .main__card_img{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .main__card_cv{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__card_img{
+        margin-left: 1rem;
+        width: 95%;
+    }
+    .main__card_text > h3{
+        font-size: 3.7rem;
+    }
+    .main__card_text > p{
+        font-size: 1.7rem;
+    }
 }

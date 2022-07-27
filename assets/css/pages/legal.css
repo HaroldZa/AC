@@ -5,3 +5,9 @@
     font-size: 2rem;
     font-weight: 300;
 }
+
+@media (max-width: 1220px) {
+    .hero__content{
+        padding-top: 13rem;
+    }
+}

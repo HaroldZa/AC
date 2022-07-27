@@ -106,3 +106,19 @@ details[open] summary:before {
 summary::-webkit-details-marker {
     display: none;
 }
+
+@media (max-width: 1220px) {
+    .hero__content{
+        padding-top: 13rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__multi_title{
+        font-size: 2.3rem;
+    }
+    details[open] p,
+    details p{
+        font-size: 1.7rem;
+    }
+}

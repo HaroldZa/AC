@@ -14,9 +14,9 @@
 
 <body>
     <header class="hero">
-        <nav class="nav">
+        <nav class="nav desktop">
             <ul class="nav-left">
-                <li><a class="active" href="/">Inicio</a></li>
+                <li><a class="active_nav" href="/">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
@@ -33,6 +33,44 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="menu mobile">
+            <h4 class="mobile" style="text-align: center; margin-bottom: 4rem;">Menu</h4>
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="servicios.html">Servicios</a></p>
+            <p><a href="nosotros.html">Nosotros</a></p>
+            <p><a href="blog.html">Blog</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+            <div class="footer__menu_mobile">
+                <img class="menu_logo" src="assets/images/logo_1.png" alt="">
+                <div class="footer__icons">
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/r_5.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/r_6.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/r_7.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="icon" src="assets/images/icons/r_8.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu__toggler mobile"><span></span></div>
+        <div class="nav__mobil mobile">
+            <a id="nav__logo_mobile" href="index.html">
+                <img src="assets/images/logo_1.png" alt="AC">
+            </a>
+            <a class="nav__btn" href="#">
+                <div class="nav__btn_icon"></div>
+                <span>Pedir Cita</span>
+            </a>
+        </div>
 
         <div class="hero__content">
             <h1>Nosotros</h1>
@@ -163,9 +201,10 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                        <div class="swiper-pagination-text">
-                            <strong class="current-slide">current-slide</strong> / <strong class="total-slides">Total</strong>
-                        </div>
+                    <div class="swiper-pagination-text">
+                        <strong class="current-slide">current-slide</strong> / <strong
+                            class="total-slides">Total</strong>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,9 +217,9 @@
                 <input class="zoom" type="text" placeholder="Nombre">
                 <input class="zoom" type="email" placeholder="E-mail">
                 <a class="advice__btn" href="#">¡Quiero ser el primero!</a>
-            </div>
-            <div class="advice__terms">
-                <label><input type="checkbox"> <span>Acepto los términos y condiciones.</span></label>
+                <div class="advice__terms">
+                    <label><input type="checkbox"> <span>Acepto los términos y condiciones.</span></label>
+                </div>
             </div>
         </div>
     </section>
@@ -210,26 +249,95 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__links">
-                <div class="footer__work">
-                    <h4>Trabaja con nosotros</h4>
-                    <ul>
-                        <li><a href="te-unes-a-nuestro-equipo.html">¿Te unes al equipo?</a></li>
-                        <li><a href="contacto.html">Contácto</a></li>
-                    </ul>
+        <div class="desktop">
+            <div class="footer__content">
+                <div class="footer__links">
+                    <div class="footer__work">
+                        <h4>Trabaja con nosotros</h4>
+                        <ul>
+                            <li><a href="te-unes-a-nuestro-equipo.html">¿Te unes al equipo?</a></li>
+                            <li><a href="contacto.html">Contácto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__legal">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+                            <li><a href="politica-de-privacidad.html">Política de privacidad</a></li>
+                            <li><a href="politica-de-cookies.html">Política de cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social">
+                        <h4>Síguenos</h4>
+                        <ul class="icons">
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/r_5.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/r_6.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/r_7.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="icon" src="assets/images/icons/r_8.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer__legal">
+                <img src="assets/images/logo_3.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer__content mobile container">
+            <div class="footer__work">
+                <div id="1" class="footer__title_top">
+                    <h4>Servicios destacados</h4>
+                    <img class="footer__icon" id="img1" src="assets/images/icons/plus.png" alt="">
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Producto 1</a></li>
+                        <li><a href="#">Producto 2</a></li>
+                        <li><a href="#">Producto 3</a></li>
+                        <li><a href="#">Producto 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__sections">
+                <div id="2" class="footer__title_top">
+                    <h4>Otras secciones</h4>
+                    <img class="footer__icon" id="img2" src="assets/images/icons/plus.png" alt="">
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Sección 1</a></li>
+                        <li><a href="#">Sección 2</a></li>
+                        <li><a href="#">Seccióon 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__legal">
+                <div id="3" class="footer__title_top">
                     <h4>Legal</h4>
+                    <img class="footer__icon" id="img3" src="assets/images/icons/plus.png" alt="">
+                </div>
+                <nav class="footer__nav">
                     <ul>
                         <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
                         <li><a href="politica-de-privacidad.html">Política de privacidad</a></li>
                         <li><a href="politica-de-cookies.html">Política de cookies</a></li>
                     </ul>
-                </div>
-                <div class="footer__social">
-                    <h4>Síguenos</h4>
-                    <ul>
+                </nav>
+            </div>
+            <div class="footer__logo_text">
+                <img src="assets/images/logo_1.png" alt="">
+                <p>Lorem ipsum dolor sit amet, co eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+            <div class="footer__follow">
+                <div class="footer__icons">
+                    <ul class="icons">
                         <li>
                             <a href="#"><img class="icon" src="assets/images/icons/r_5.png" alt=""></a>
                         </li>
@@ -245,13 +353,13 @@
                     </ul>
                 </div>
             </div>
-            <img src="assets/images/logo_3.png" alt="">
         </div>
         <div class="footer__copyright">
             © 2022 Alfisco Canaria S.L. - Todos los derechos reservados
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -264,19 +372,25 @@
                 clickable: true,
             },
             breakpoints: {
-                350: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                    loop: true,
+                    initialSlide: 0, //this one accept a number according to docs
+                },
+                768: {
                     slidesPerView: 2,
                 },
-                1300: {
+                1151: {
                     slidesPerView: 3,
-                },
+                }
             },
             /* events */
             on: {
                 slideChange: function () {
                     var n1 = '0';
                     var currentSlide = this.realIndex + 1;
-                    if(currentSlide > 9){
+                    if (currentSlide > 9) {
                         n1 = '';
                     }
                     document.querySelector('.current-slide').innerHTML = n1 + currentSlide;
@@ -292,7 +406,7 @@
         let n = '0';
         var n1 = '';
 
-        if(document.getElementsByClassName("swiper-pagination-bullet").length > 9){
+        if (document.getElementsByClassName("swiper-pagination-bullet").length > 9) {
             n = '';
         }
         document.querySelector('.total-slides').innerHTML = n + document.getElementsByClassName("swiper-pagination-bullet").length;
