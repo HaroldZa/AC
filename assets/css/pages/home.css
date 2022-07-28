@@ -67,14 +67,14 @@
     padding: 2rem 3rem;
 }
 
-.card__text>h4 {
+.card__text h4 {
     font-family: var(--fontSecondary);
     color: #575972;
     font-size: 1.8rem;
     font-weight: 800;
 }
 
-.card__text>p {
+.card__text p {
     padding-bottom: 3rem;
     font-size: 1.5rem;
     font-weight: 300;

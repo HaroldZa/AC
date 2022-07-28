@@ -20,15 +20,15 @@
 .main__card:hover{
     cursor: pointer;
 }
-.main__card:hover a{
+.main__card:hover .main__card_btn{
     background-color: #763476;
 }
-.main__card > img{
+.main__card img{
     transition: all .8s ease-in-out;
     height: 22rem;
     width: 100%;
 }
-.main__card:hover > img {
+.main__card:hover img {
     transform: scale(1.05);
     transform-origin: 50% 50%;
     filter: brightness(90%);
@@ -38,7 +38,7 @@
     text-align: center;
     padding: 2rem 3rem;
 }
-.main__card_info > span{
+.main__card_info > a > span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,11 +49,11 @@
     font-weight: 300;
     margin-right: 5rem;
 }
-.main__card_info > span > span{
+.main__card_info > a > span > span{
     font-size: 3.1rem;
     font-weight: 800;
 }
-.main__card_info > a{
+.main__card_btn{
     display: block;
     font-family: var(--fontSecondary);
     font-weight: 800;
