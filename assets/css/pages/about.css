@@ -94,10 +94,21 @@
     margin-top: 2.5rem;
 }
 
+.team__img{
+    max-width: 24.6rem;
+    max-height: 24.3rem;
+}
+
 .team__img > img{
+    width: 24.6rem;
+    height: 24.3rem;
+  object-fit: cover;
     filter: grayscale(1);
 }
 .swiper-slide-active .team__img > img{
+    filter: grayscale(0);
+}
+.team__img > img:hover{
     filter: grayscale(0);
 }
 
@@ -151,7 +162,7 @@
 }
 .swiper{
     padding-bottom: 10rem !important;
-    padding-left: 2rem !important;
+    padding-left: 4rem !important;
 }
 .swiper-pagination{
     bottom: 3rem !important;
@@ -173,6 +184,24 @@
 }
 .swiper-pagination-bullet-active{
     background: var(--primary) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: var(--primary) !important;
+    top: 45% !important;
+    transition: .7s;
+}
+.swiper-button-next:active,
+.swiper-button-prev:active{
+    transition: .7s;
+    zoom: 102%;
+}
+.swiper-button-next{
+    right: -2px !important;
+}
+.swiper-button-prev{
+    left: -2px !important;
 }
 
 /* Advice */
@@ -287,7 +316,7 @@
 .main__block_img:hover{
     transform: scale(1.02);
     transition: .7s;
-}
+} 
 
 .team__slide:hover .team__img{
     transform: rotate(-1deg);
@@ -392,5 +421,16 @@
     }
     .swiper-slide > div:first-child{
         margin-left: -16rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        color: var(--primary) !important;
+        top: 95% !important;
+    }
+    .swiper-button-next{
+        right: 35% !important;
+    }
+    .swiper-button-prev{
+        left: 40% !important;
     }
 }

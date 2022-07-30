@@ -25,6 +25,7 @@
     box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .card:hover {
@@ -36,7 +37,7 @@
     transition: .7s;
     content: url("../../images/icons/balance_active.png");
 }
-
+ 
 .card__icon {
     transition: .7s;
     content: url("../../images/icons/balance.png");
@@ -75,17 +76,20 @@
 }
 
 .card__text p {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     font-size: 1.5rem;
     font-weight: 300;
 }
 
 .card__text_btn {
+    position: absolute;
+    bottom: 2rem;
     display: flex;
     align-items: center;
 }
 
 .card__text_btn>a {
+    bottom: 0;
     font-family: var(--fontSecondary);
     font-weight: 800;
     font-size: 1.6rem;
@@ -93,7 +97,7 @@
 }
 
 .card__text_btn>img {
-    width: 15%;
+    width: 35%;
     margin-top: -.4rem;
     margin-left: -1rem;
 }
@@ -140,9 +144,67 @@
     border-left: none;
 }
 
-.main__card>img {
+.main__card img {
+    display: inline-block;
     width: 12.8rem;
     padding-bottom: 1rem;
+    transition: .5s;
+}
+
+.main__card {
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid transparent;
+    z-index: 0;
+}
+
+.main__card img {
+    position: relative;
+    transition: .5s;
+    z-index: 3;
+    margin-bottom: .2rem;
+}
+
+.main__card:hover{
+    color: rgb(242, 242, 242);
+}
+
+.main__card:hover > img {
+    transform: rotateY(360deg);
+}
+
+.main__card:hover > div > img{
+    transform: rotateY(360deg);
+    content:url("../../images/logo_2_hover.png");
+}
+
+.main__card:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+
+.main__card:hover:before {
+    top: 0;
+}
+
+.main__card:before {
+    background: var(--primary);
+}
+
+.main__card:nth-child(3):hover{
+    color: #000;
+}
+
+.main__card:nth-child(3)::before{
+    background-color: transparent;
 }
 
 .main__card>span {
@@ -153,9 +215,13 @@
     width: 78%;
     margin: 0 auto;
     padding-bottom: .5rem;
+    position: relative;
+    z-index: 3;
 }
 
 .main__card>p {
+    position: relative;
+    z-index: 3;
     margin: 0;
     font-size: 1.4rem;
     font-weight: 300;
@@ -755,14 +821,12 @@
 }
 
 /* Hover zoom */
-.main__card > img,
 .reviews__card,
 .associated__cards>img,
 .social__icons img{
     transition: .5s;
 }
 .card:hover,
-.main__card > img:hover,
 .reviews__card:hover,
 .associated__cards>img:hover{
     transform: scale(1.02);

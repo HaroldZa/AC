@@ -23,6 +23,13 @@
     margin-left: -2rem;
     margin-top: -2rem;
 }
+.main__card_img>video {
+    max-width: 53.4rem;
+    max-height: 35.1rem;
+    width: 100%;
+    margin-left: -2rem;
+    margin-top: -2rem;
+}
 #pause{ 
     position: absolute;
     right: 2rem;
