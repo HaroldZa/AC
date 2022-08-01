@@ -1331,6 +1331,7 @@
         });
     </script>
     <script>
+        var cont = 0;
         var cantidad = 0;
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
@@ -1359,6 +1360,16 @@
             /* events */
             on: {
                 slideChange: function () {
+                    cont++
+                    $(window).resize(function () {
+                        var $win = $(this);
+                        if ($win.width() <= 768) {
+                            if (cont === 1 && $(window).width() <= 768) {
+                                $(".swiper-slide>div:first-child").css("margin-left", "20px");
+                            }
+                        }
+                    }).resize();
+
                     var n1 = '0';
                     var currentSlide = this.realIndex + 1;
                     if (currentSlide > 9) {
@@ -1414,7 +1425,7 @@
             let ncat = document.querySelectorAll(`#${cityName}`)[0].childNodes[3].children.length;
             if (ncat > 9) {
                 n = '';
-            }else if(ncat <= 0){
+            } else if (ncat <= 0) {
                 ncat = '1';
             }
             document.querySelector(`.total-${cityName}`).innerHTML = n + ncat;

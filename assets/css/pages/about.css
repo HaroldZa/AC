@@ -419,10 +419,13 @@
     .swiper-pagination-text{
         display: none;
     }
-    .swiper-slide > div:first-child{
-        margin-left: -16rem;
+    .team__slide{
+        margin-left: -16rem;   
     }
-    .swiper-button-next,
+    .margin-left{
+        
+    }
+    /* .swiper-button-next,
     .swiper-button-prev{
         color: var(--primary) !important;
         top: 95% !important;
@@ -432,5 +435,9 @@
     }
     .swiper-button-prev{
         left: 35% !important;
+    } */
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none !important;
     }
 }
