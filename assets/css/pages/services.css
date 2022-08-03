@@ -67,9 +67,12 @@
 
 /* Slider */
 .swiper {
-    height: 100%;
+    
 }
-.cards__content{height: 150vh;}
+
+.swiper-wrapper {
+    position: absolute;
+}
 .swiper-slide {
     font-size: 18px;
     height: calc((100% - 30px) / 3) !important;
@@ -78,7 +81,7 @@
     padding-bottom: 4rem !important;
 }
 .swiper-pagination{
-    bottom: 0rem !important;
+    bottom: -.7rem !important;
 }
 .swiper-pagination-bullet{
     padding: .3rem !important;
@@ -91,6 +94,7 @@
     animation: pulse;
     animation-duration: 1s;
     transition: .7s;
+    height: auto;
 }
 
 .main__card:hover{

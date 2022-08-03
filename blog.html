@@ -1306,6 +1306,12 @@
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script>
+        let h = $('.card:visible').css('height');
+        let ht = parseInt(h) * 2 + 200 + 'px';
+        console.log(h, ht)
+        $(".cards__content").css("height", ht);
+    </script>
+    <script>
         var swiper = new Swiper(".slide-content_text", {
             slidesPerView: 5,
             spaceBetween: 1,

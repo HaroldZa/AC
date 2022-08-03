@@ -53,9 +53,8 @@ $('.slider-nav').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinitive: false,
                 infinite: true,
-                loop: false,
+                loop: true,
                 dots: true
             }
         },
@@ -64,10 +63,13 @@ $('.slider-nav').slick({
 
 var contr = 0;
 
-$(".slider-nav").on("afterChange", function (){
-    contr++;
-    if(cont === 1 && $(window).width() <= 768){
-        $(".reviews__cards").css("margin-left", '0rem');
-        $(".slick-slide").css("margin-right", '0');
+$(".slider-nav").on("afterChange", function (e, s, currentSlideIndex) {
+    let previousSlideIndex = currentSlideIndex - 1;  
+    if (contr === 0 && $(window).width() <= 500) {
+        if(previousSlideIndex == 1){
+            $('slider-nav').slick('slickGoTo', currentSlideIndex + 1);
+        }
+        $(".reviews__card:first-child").css("margin-left", '0rem');
     }
-});
+    contr++;
+}); 

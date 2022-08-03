@@ -161,53 +161,17 @@
     z-index: 0;
 }
 
-.main__card img {
+.main__card_img {
     position: relative;
     transition: .5s;
     z-index: 3;
     margin-bottom: .2rem;
 }
-
-.main__card:hover{
-    color: rgb(242, 242, 242);
-}
-
-.main__card:hover > img {
-    transform: rotateY(360deg);
-}
-
-.main__card:hover > div > img{
+.main__card_hover{
     transform: rotateY(360deg);
     content:url("../../images/logo_2_hover.png");
+    margin-bottom: .2rem;
 }
-
-.main__card:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    z-index: 2;
-}
-
-.main__card:hover:before {
-    top: 0;
-}
-
-.main__card:before {
-    background: var(--primary);
-}
-
-.main__card:nth-child(3):hover{
-    color: #000;
-}
-
-.main__card:nth-child(3)::before{
-    background-color: transparent;
-}
-
 .main__card>span {
     display: block;
     font-size: 1.8rem;
@@ -1097,13 +1061,15 @@
         margin-right: 5rem;
     }
 
-    .reviews__cards {
-        margin-left: -5rem;
-        height: 35rem;
+    .reviews__card:first-child {
+        margin-left: -8rem;
     }
 
-    .reviews__card {
+    /* .reviews__card {
         width: 35rem !important;
 
     }
+    .autow{
+        width: 32rem !important;
+    } */
 }
