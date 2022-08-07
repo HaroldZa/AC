@@ -536,11 +536,14 @@
     display: none !important;
 }
 
-.reviews__cards {}
+.slick-list {
+    display: grid;
+}
 
 .reviews__card {
     background-color: var(--dark);
     padding: 1rem 2rem;
+    height: 100%;
 }
 
 .reviews__card_top {

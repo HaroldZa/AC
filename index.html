@@ -551,6 +551,10 @@
         }).mouseout(function () {
             $('.main__card_hover').removeClass('main__card_hover').addClass('main__card_img');
         });
+
+        $( window ).on( "orientationchange", function( event ) {
+  location.reload(true);
+});
     </script>
 </body>
 
