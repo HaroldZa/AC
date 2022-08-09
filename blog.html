@@ -1304,11 +1304,13 @@
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script>
         let h = $('.swiper-slide:visible .card:visible').css('height');
-        let ht = parseInt(h) * 2 + 100 + 'px';
-        if(ht > 400){
-            ht = ht + 200;
+        if(parseInt(h) < 450){
+            h = parseInt(h) + 200;
         }
+        let ht = parseInt(h) * 2 + 100 + 'px';
+        
         $(".cards__content").css("height", ht);
+        
 
         $(window).on("orientationchange", function (event) {
             location.reload(true);
