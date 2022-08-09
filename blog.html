@@ -1306,10 +1306,15 @@
         let h = $('.swiper-slide:visible .card:visible').css('height');
         console.log(h)
         if(parseInt(h) < 420){
-            h = parseInt(h) + 200;
+            if($( window ).width() > 768){
+                h = parseInt(h) + 200;
+            }else{
+                h = parseInt(h) + 150;
+            }
+            
         }
         console.log(h)
-        let ht = parseInt(h) * 2 + 100 + 'px';
+        let ht = parseInt(h) * 2 + 150 + 'px';
         
         $(".cards__content").css("height", ht);
         
