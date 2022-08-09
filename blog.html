@@ -1303,6 +1303,7 @@
 
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script>
+        let c = 0;
         let h = $('.card_h:visible').css('height');
         let ht = parseInt(h) * 2 + 200 + 'px';
         $(".cards__content").css("height", ht);
@@ -1310,12 +1311,25 @@
         $(window).on("orientationchange", function (event) {
             location.reload(true);
         });
+
+        
+            $(document).ready(function () {
+                var refreshId = setInterval(function () {
+                    if(c===0){
+                    $('blog.html').load('#Todos');
+                    console.log('a');
+                    c++;
+                }
+                }, 1000);
+            });
+            
+        
     </script>
     <script src="assets/libs/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
+
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-    
+
     <script>
         var swiper = new Swiper(".slide-content_text", {
             slidesPerView: 5,
