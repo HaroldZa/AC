@@ -1304,9 +1304,11 @@
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script>
         let h = $('.swiper-slide:visible .card:visible').css('height');
-        if(parseInt(h) < 450){
+        console.log(h)
+        if(parseInt(h) < 420){
             h = parseInt(h) + 200;
         }
+        console.log(h)
         let ht = parseInt(h) * 2 + 100 + 'px';
         
         $(".cards__content").css("height", ht);
