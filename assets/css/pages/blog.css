@@ -221,7 +221,7 @@
     -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 90%;
+    
 }
 
 .card:hover {
@@ -482,6 +482,9 @@
 
     .slide-container {
         padding-right: 0 !important;
+    }
+    .card{
+        height: 90%;
     }
 }
 
