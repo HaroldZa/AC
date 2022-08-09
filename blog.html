@@ -147,7 +147,6 @@
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                             nibh
                                             euismod tincidunt ut
-                                            laoreet dolore magna aliquam erat euismod tincidunt ut
                                             laoreet dolore magna aliquam erat</p>
                                         <div class="card__text_btn">
                                             <a>Ver mas</a>
@@ -1305,10 +1304,11 @@
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script>
         let h = $('.swiper-slide:visible .card:visible').css('height');
-        let ht = parseInt(h) * 2 + 155 + 'px';
+        let ht = parseInt(h) * 2 + 100 + 'px';
+        if(ht > 400){
+            ht = ht + 200;
+        }
         $(".cards__content").css("height", ht);
-
-        console.log(h, ht);
 
         $(window).on("orientationchange", function (event) {
             location.reload(true);
