@@ -147,6 +147,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                             nibh
                                             euismod tincidunt ut
+                                            laoreet dolore magna aliquam erat euismod tincidunt ut
                                             laoreet dolore magna aliquam erat</p>
                                         <div class="card__text_btn">
                                             <a>Ver mas</a>
@@ -1303,7 +1304,7 @@
 
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script>
-        let h = $('.card_h:visible').css('height');
+        let h = $('.swiper-slide:visible .card:visible').css('height');
         let ht = parseInt(h) * 2 + 155 + 'px';
         $(".cards__content").css("height", ht);
 
