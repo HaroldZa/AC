@@ -103,12 +103,15 @@
     width: 24.6rem;
     height: 24.3rem;
   object-fit: cover;
+}
+.swiper-slide > div:hover{
+    cursor: pointer;
+}
+
+.active_filter{
     filter: grayscale(1);
 }
-.swiper-slide-active .team__img > img{
-    filter: grayscale(0);
-}
-.team__img > img:hover{
+.disable_filter{
     filter: grayscale(0);
 }
 
@@ -422,20 +425,12 @@
     .team__slide{
         margin-left: -16rem;   
     }
-    .margin-left{
-        
+    .swiper-slide > div{
+        filter: grayscale(1);
     }
-    /* .swiper-button-next,
-    .swiper-button-prev{
-        color: var(--primary) !important;
-        top: 95% !important;
+    .swiper-slide-active >div{
+        filter: grayscale(0);
     }
-    .swiper-button-next{
-        right: 35% !important;
-    }
-    .swiper-button-prev{
-        left: 35% !important;
-    } */
     .swiper-button-next,
     .swiper-button-prev{
         display: none !important;
